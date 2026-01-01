@@ -1,5 +1,5 @@
 ## Purpose
-This repo codifies the approach and processes I use for SDD, and is used to version control my custom slash commands and global/project document templates. It is a living document. It represents my process when I have access to both agentic coding tools (Claude Code) and all required packages (GitHub Spec Kit). It could be used by any other coding agent provided the correct Spec Kit files are used.
+This repo codifies the approach and processes I use for SDD, and serves to version control my custom slash commands and global+project document templates. It is a living document. I prefer Claude Code and GitHub Spec Kit, but this approach could work with any agentic coding tool (ex. GitHub Copilot, Cursor) and alternative SDD package ( ex. BMAD-METHOD, OpenSpec).
 
 **SDD (Specification-Driven Development)** means writing clear intent and requirements before implementation. The agent builds from specs, not ambiguous requests. **GitHub Spec Kit** is a package providing templated slash commands for creating specifications, plans, and tasks. This workflow prevents scope creep and reduces rework by forcing upfront clarity.
 
