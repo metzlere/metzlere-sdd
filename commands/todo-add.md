@@ -47,9 +47,9 @@ Add a new task to `TODO.md` in the appropriate section.
    - `bug` or `fix` → `## Bugs`
    - `chore` → `## Chores`
 
-5. **Add as checkbox item** with date in format MM-DD-YYYY at the end of the appropriate section:
+5. **Add as checkbox item** at the end of the appropriate section:
    ```
-   - [ ] MM-DD-YYYY <description>
+   - [ ] <description>
    ```
 
 6. **Confirm** with the task added and current section count.
