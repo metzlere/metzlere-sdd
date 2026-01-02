@@ -17,7 +17,7 @@ See the following overview. Items are explained in greater detail below.
 ### Project
 - **CLAUDE.md** — Project-specific context, architecture decisions, and development notes. Provides domain knowledge and technical constraints to the agent.
 - **constitution.md** — Non-negotiable principles and constraints that cannot be violated during implementation. Generated via spec kit to formalize project boundaries.
-- **TODO.md** — Task backlog organized by type (features, bugs, chores). Single source of truth for planned work.
+- **TODO.md** — Task backlog organized by type (features, bugs, chores). Single source of truth for planned work. This is also useful context for the agent.
 - **CHANGELOG.md** — Chronological log of completed work. Updated when tasks are marked done, creating an audit trail.
 
 ---
@@ -27,7 +27,7 @@ See the following overview. Items are explained in greater detail below.
 ### Claude Code
 
 **`/spec-intent`**
-Turn unstructured cybersecurity analytics ideas into clean, intent-only input for spec kit workflows. Extracts core problem, users, constraints, and success criteria through guided questions.
+Turn unstructured ideas into clean, intent-only input for spec kit workflows. Extracts core problem, users, constraints, and success criteria through guided questions.
 
 **`/quickspec`**
 Lightweight spec-driven workflow for small features. Three-phase approach: spec → plan → build, with artifacts stored in `.quickspec/`.
@@ -36,7 +36,7 @@ Lightweight spec-driven workflow for small features. Three-phase approach: spec 
 Comprehensive codebase cleanup and consistency check. Removes obsolete code, syncs documentation, detects dead database columns, and fixes architectural drift.
 
 **`/todo-add`**
-Add tasks to the project backlog. Appends items to `TODO.md` categorized as features, bugs, or chores.
+Add tasks to the project backlog. Used for idea/task capture. Appends items to `TODO.md` categorized as features, bugs, or chores.
 
 **`/todo-done`**
 Complete tasks and log changes. Marks tasks complete in `TODO.md` and appends dated entries to `CHANGELOG.md`.
@@ -76,6 +76,4 @@ The following commands are provided by the GitHub Spec Kit package and templated
 2. **Specify**: `/speckit.specify` → creates detailed spec with data sources, scoring logic, output format
 3. **Plan**: `/speckit.plan` → technical design for pipeline architecture, model selection, infrastructure
 4. **Break down**: `/speckit.tasks` → discrete implementation tasks with clear completion criteria
-5. **Track**: `/todo-add` → adds tasks to backlog
-6. **Implement**: `/speckit.implement` → agent executes tasks according to plan
-7. **Complete**: `/todo-done` → marks complete, logs to changelog
+5. **Implement**: `/speckit.implement` → agent executes tasks according to plan
